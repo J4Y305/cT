@@ -20,7 +20,7 @@ QueueType *createQueue(){
 //순차 큐가 공백 상태인지 검사하는 연산
 int isEmpty(QueueType *Q){
     if (Q->front==Q->rear){
-        printf("Queue is empty!");
+        printf("Queue is empty! ");
         return 1;
     }
     else return 0;
@@ -29,7 +29,7 @@ int isEmpty(QueueType *Q){
 //순차 큐가 포화 상태인지 검사하는 연산
 int isFull(QueueType *Q){
     if (Q->rear==Q_SIZE-1){
-        printf("Queue is full!");
+        printf("Queue is full! ");
         return 1;
     }
     else return 0;
@@ -80,7 +80,7 @@ void main(){
     printf("\n 삭제 >>"); data=deQueue(Q1); printQ(Q1);
     printf("\t 삭제 데이터 : %c", data);
     printf("\n 삭제 >>"); data=deQueue(Q1); printQ(Q1);
-    printf("\t 삭제 데이터 : %c", data);
+    printf("\t\t 삭제 데이터 : %c", data);
     printf("\n 삭제 >>"); data=deQueue(Q1); printQ(Q1);
     printf("\t\t 삭제 데이터 : %c", data);
 
